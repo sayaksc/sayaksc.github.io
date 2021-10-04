@@ -1,29 +1,242 @@
- <!Doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <title>Sayak Chakrabarti</title>
+  <title>Sayak Chakrabarti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	a:hover {
+  		background-color: yellow;
+	}
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      border-radius: 0;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      position:fixed;
+    }
+    ul.nav a:hover { background-color: black;}
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #e6e6fa;
+      padding: 25px;
+    }
+    body {
+      padding-top: 50px;
+  }
+  </style>
 </head>
-
 <body>
-<br><br>
-    Homepage of Sayak Chakrabarti
-	
-	<br><br>
-	<a href="https://sayaksc.github.io/files/cv.pdf">CV</a>
-<h4> Projects: </h4>
-<ul>
-	<li> <a href="https://sayaksc.github.io/Projects/factorization_pk.pdf"> Roots of Polynomials modulo powers of primes</a> </li>
-	<li> <a href="https://arxiv.org/abs/1906.00494"> Graphon Estimation from Partially Observed Network Data </a></li>
-	<li> <a href="https://sayaksc.github.io/Projects/Logic_Locking.pdf"> Linear Cryptanalysis Applied to Logic Locking</a></li>
-	<li> Breaking Cryptosystems</li>
-</ul>
-	
-<br><br><br>
-<h4> Contact: </h4>
-Email Id: sayak@iitk.ac.in
-</body>
 
-<h4> Relevant Links </h4>
-<a href="https://github.com/sayaksc">Github</a>
+
+
+
+<nav class="navbar navbar-light" style="background-color: #1034a6;" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li><a href="#home" style="color:white">Home</a></li>
+        <li><a href="#Res" style="color:white">Research Interests</a></li>
+        <li><a href="#pub" style="color:white">Publications</a></li>
+        <li><a href="#reports" style="color:white">Miscellaneous Projects</a></li>
+        <li><a href="#teaching" style="color:white">Teaching</a></li>
+        <li><a href="#talks" style="color:white">Talks</a></li>
+        <li><a href="#contact" style="color:white">Contact</a></li>
+        <li><a href="files/CV.pdf" style="color:white">CV</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron" style="background-color: #e6e6fa;" id="home">
+  <div class="container text-left">
+    <h1>Sayak Chakrabarti</h1>
+     <p><h4>Hey!</h4>I am a dual BT-MT student in the Dept. of CSE, IITK and am very fortunate to be advised by <a href="https://www.cse.iitk.ac.in/users/nitin/"> Prof. Nitin Saxena</a>. I am broadly interested in the intersection of Mathematics and Theoretical Computer Science containing a flavour of algebra, and am looking for research opportunities in the same.
+     	<br><br>
+     	Click <a href="files/CV.pdf"> here </a> for my CV.
+     </p>
+  </div>
+</div>
+
+<div class="container-fluid" id="Res">
+  <h2>Research Interests</h2>
+  <ul class="list-group">
+  <li class="list-group-item">Algebraic Complexity</li>
+  <li class="list-group-item">Computational Algebra and Number Theory</li>
+  <li class="list-group-item">Pseudorandomness</li>
+  <li class="list-group-item">Error Correcting Codes</li>
+  <li class="list-group-item">Computational Complexity</li>
+  </ul>
+</div>
+
+
+<div class="container-fluid" id="pub">
+  <h2>Publications</h2>
+  <div class="list-group">
+  <a href="https://arxiv.org/abs/2011.10978" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h4 class="mb-1">On algorithms to find p-ordering</h4>
+      <small class="text-muted">Conference on Algorithms and Discrete Applied Mathematics (CALDAM), 2021</small>
+    </div>
+    <p class="mb-1">Aditya Gulati,<b> Sayak Chakrabarti </b>, Rajat Mittal</p>
+  </a>
+  <a href="https://arxiv.org/abs/2011.10978" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h4 class="mb-1">Graphon Estimation from Overlapping Vertex-Induced Subgraphs </h4>
+      <small class="text-muted">submitted to the Journal of Computational and Graphical Statistics (JCGS)</small>
+    </div>
+    <p class="mb-1"><b> Sayak Chakrabarti </b>, Soumendu Sundar Banerjee</p>
+  </a>
+
+
+</div>
+</div>
+
+
+
+<div class="container-fluid" id="reports">
+  <h2>Miscellaneous Reports</h2>
+  <div class="list-group">
+  <a href="files/reports/UGP_nitin.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h4 class="mb-1">On factorization and root counting modulo prime powers</h4>
+      <small class="text-muted">2020</small>
+    </div>
+    <p>Advisor: Prof. Nitin Saxena</p>
+  </a>
+  <a href="files/reports/UGP_rajat_2.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h4 class="mb-1">An algorithm to find p-ordering of sets in succinct form</h4>
+      <small class="text-muted">2020</small>
+    </div>
+    <p>Advisor: Prof. Rajat Mittal</p>
+  </a>
+  <a href="files/reports/skolem.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h4 class="mb-1">Continuous Skolem Problem for Higher Dimensions</h4>
+      <small class="text-muted">2020</small>
+    </div>
+    <p>Advisors: Dr. Engel Lefauchex, Dr. Eike Neumann, Prof. J&ouml;el Ouaknine</p>
+  </a>
+  <a href="files/reports/UGP_rajat_1.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h4 class="mb-1">Factorization modulo prime powers</h4>
+      <small class="text-muted">2019</small>
+    </div>
+    <p>Advisor: Prof. Rajat Mittal</p>
+  </a>
+  <a href="files/reports/logic_locking.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h4 class="mb-1">Linear Cryptanalysis Applied to Logic Locking</h4>
+      <small class="text-muted">2019</small>
+    </div>
+    <p>with Bholeshwar Khurana and Mahajan Dipak Anil, Advisor: Prof. Pramod Subramanyan</p>
+  </a>
+
+
+</div>
+</div>
+
+
+
+<div class="container-fluid" id="teaching">
+  <h2>Teaching</h2>
+  <div class="list-group">
+  <a href="#teaching" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Tutor, ESC101: Fundamentals of Computing</h3>
+      <small class="text-muted">October 2021 - </small>
+    </div>
+    <p class="mb-1">Instructors: Prof. Swarnendu Biswas and Prof. Hamim Zafar</p>
+  </a>
+  <a href="#teaching" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Teaching Assistant, CS203: Probability for Computer Science</h3>
+      <small class="text-muted">March 2021 - May 2021</small>
+    </div>
+    <p class="mb-1">Instructor: Prof. Nitin Saxena</p>
+  </a>
+  <a href="#teaching" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Teaching Assistant, CS202: Logic for Computer Science</h3>
+      <small class="text-muted">January 2021 - February 2021</small>
+    </div>
+    <p class="mb-1">Instructor: Prof. Sunil Simon</p>
+  </a>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid" id="talks">
+  <h2>Talks</h2>
+  <div class="list-group">
+  <a href="files/talks/682_talk.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Quantum Information Theory and Applications to Local Decoding</h3>
+      <small class="text-muted">April 2021</small>
+    </div>
+    <p class="mb-1">Course: Quantum Computing</p>
+  </a>
+  <a href="files/talks/arith_geom_2.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Towards Mordell's Theorem: A useful Homorphism</h3>
+      <small class="text-muted">November 2020</small>
+    </div>
+    <p class="mb-1">Talk II, Course: Arithmetic Geometry</p>
+  </a>
+  <a href="files/talks/arith_geom_1.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Weierstrass Normal Form</h3>
+      <small class="text-muted">November 2020</small>
+    </div>
+    <p class="mb-1">Talk I, Course: Arithmetic Geometry</p>
+  </a>
+  <a href="files/talks/arith_geom_2.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Weierstrass Normal Form</h3>
+      <small class="text-muted">November 2020</small>
+    </div>
+    <p class="mb-1">Talk I, Course: Arithmetic Geometry</p>
+  </a>
+  <a href="files/talks/arith_geom_2.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">Factorization of polynomials modulo prime powers</h3>
+      <small class="text-muted">July 2020</small>
+    </div>
+    <p class="mb-1">Undergraduate Project</p>
+  </a>
+</div>
+</div>
+
+
+
+<div class="container-fluid text-center" id="contact">
+  <h2>Contact</h2><br>
+  <p> <b>Email</b><br>
+    sayak at cse dot iitk dot ac dot in<br>
+    sayaksc at gmail dot com</p>
+</div>
+
+
+<footer class="container-fluid text-center" style="text-align: right">
+  <p>The template is due to <a href="https://devansh99.github.io/">Devansh Shringi</a></p>
+</footer>
+
+</body>
 </html>
+
